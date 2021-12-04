@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("../assets/WebCV.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cvs {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+}
+
+.cv > * {
+    flex: 1;
+}
+
+.cv__display {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 500px) {
+    .cv__display {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+.cv--hidden {
+    display: none;
+}
+
+.cv__members {
+    margin-left: 16px;
+}
+
+.cv__team {
+    font-family: "Source Sans Pro", serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.cv__member {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv__member-name {
+    font-family: "Source Sans Pro", serif;
+    margin-bottom: 2px;
+}
+
+.cv__member-id {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .cv__team {
+        font-size: 18px;
+    }
+
+    .cv__member-name {
+        font-size: 14px;
+    }
+
+    .cv__member-id {
+        font-size: 12px;
+    }
+}
+
+.cvs__button {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 45%;
+}
+
+/* .cvs__button:hover {
+    fill: 
+} */
+
+.cvs__button--left {
+    left: -50px;
+}
+
+.cvs__button--right {
+    right: -50px;
+}
