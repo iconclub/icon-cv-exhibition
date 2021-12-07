@@ -35,6 +35,12 @@ body {
   position: relative;
 }
 
+.cvs__guideline {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
 .cv {
   width: 100%;
   display: flex;
@@ -175,5 +181,10 @@ body {
 
   .cvs__button--right {
     right: -50px;
+  }
+
+  .cvs__guideline {
+    text-align: center;
+    font-size: 14px;
   }
 }
