@@ -16,8 +16,9 @@
 }
 
 body {
+  position: relative;
   margin: 0;
-  background-image: url("../assets/WebCV_2.png");
+  background-image: url("../assets/WebCV_3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,6 +40,13 @@ body {
   position: absolute;
   bottom: 5%;
   right: 5%;
+}
+
+.cvs__logo {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  width: 300px;
 }
 
 .cv {
@@ -128,6 +136,10 @@ body {
 }
 
 @media only screen and (max-width: 1366px) {
+  .cvs__logo {
+    width: 250px;
+  }
+
   .cv__member {
     flex-direction: column;
   }
@@ -145,6 +157,10 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .cvs__logo {
+    width: 150px;
+  }
+
   .cv {
     gap: 0;
   }
